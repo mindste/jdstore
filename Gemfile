@@ -31,20 +31,35 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem  'bootstrap-sass'
-gem  'devise'          # 登录系统
-gem  'simple_form'     # bootstrap表单样式
+   # 登录系统
+gem  'devise'
+   # bootstrap表单样式
+gem  'simple_form'
+   #  图片上传
 gem  'carrierwave'
 gem  'mini_magick'
+
 gem  'font-awesome-rails'
-gem  'letter_opener',  group: :development  #  寄送资讯
-gem  'aasm'            #  订单系统
-gem  'intercom-rails'  #  客服系统
-gem  'ransack'         #  搜索
-gem  'will_paginate'   #  分页
-gem  'will_paginate-bootstrap'  # 美化分页效果
-gem  'rucaptcha'       #  验证码gem
-gem  'dalli'           #  加载 Memcached 或 Redis支持 的cache_store方案
-gem  'jquery-turbolinks' 
+   #  寄送资讯
+gem  'letter_opener',  group: :development
+   #  订单系统
+gem  'aasm'
+   #  客服系统
+gem  'intercom-rails'
+   #  搜索
+gem  'ransack'
+   #  分页
+gem  'will_paginate'
+   # 美化分页效果
+gem  'will_paginate-bootstrap'
+   #  验证码gem
+gem  'rucaptcha'
+   #  加载 Memcached 或 Redis支持 的cache_store方案
+gem  'dalli'
+gem  'jquery-turbolinks'
+gem  'carrierwave-qiniu'
+gem  'qiniu-rs'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
