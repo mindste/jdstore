@@ -1,25 +1,251 @@
-<div  class="lp">
-   <div  class="lp-banner">
-     <div  class="jumbotron">
-        <div class:"text-content">
-          <h1  class:"jumbotron-title">一个以书会友的地方</h1>
-            <p class:"jumbotron-slogan">
-              增长见识，提升智慧
-            </p>
-            <p class:"jumbotron-lead">
-              <a class="btn-lg  lp-b-btn"  href="/products">
-                开始行动
-              </a>
-            </p>
+<div class="welcome-box">
+  <!---=====广告轮播=====--->
+  <section class="intro-box">
+    <div class="row">
+
+      <div id="intro" class="carousel slide" data-ride="carousel">
+        <!--===== 轮播按钮 =====-->
+        <ol class="carousel-indicators">
+          <li data-target="#intro" data-slide-to="0" class="active"></li>
+          <li data-target="#intro" data-slide-to="1"></li>
+          <li data-target="#intro" data-slide-to="2"></li>
+        </ol>
+
+        <!---===== 轮播内容 =====--->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <%= link_to '#', target: "_blank" do %>
+            <!-- 图片连结，点击另开视窗 -->
+            <%= image_tag("intro_1.jpg") %>
+            <!-- 图片位置 -->
+            <div class="carousel-caption">
+              <h3></h3>
+              <!-- 标题 -->
+              <p></p>
+              <!-- 内文 -->
+            </div>
+            <% end %>
+          </div>
+
+          <div class="item">
+            <%= link_to '#', target: "_blank" do %>
+            <%= image_tag("intro_3.jpg") %>
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+            <% end %>
+          </div>
+
+          <div class="item">
+            <%= link_to '#', target: "_blank" do %>
+            <%= image_tag("intro_2.jpeg") %>
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+            <% end %>
+          </div>
+
         </div>
-     </div>
 
-
-	
-      <div  class="goTop">
-        <span   class="fa  fa-chevron-up"></span>
+        <!--===== 换页按钮 =====-->
+        <a class="left carousel-control" href="#intro" role="button" data-slide="prev">
+          <span class="fa fa-angle-left" aria-hidden="true"></span>
+          <!-- 左侧按钮图示 -->
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#intro" role="button" data-slide="next">
+          <span class="fa fa-angle-right" aria-hidden="true"></span>
+          <!-- 右侧按钮图示 -->
+          <span class="sr-only">Next</span>
+        </a>
+       </div>
       </div>
 
+ </section>
 
+  <section class="show-box">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>推荐书籍</h2>
+        <!-- 副标题 -->
+        <div class="short-line"></div>
+        <!-- 分隔线 -->
+        <div class="col-md-3">
+          <%= link_to '#' do %>
+          <!-- 商品连结 -->
+          <div class="box"><%= image_tag("weilaijianshi.jpg") %></div>
+          <!-- 商品图片 -->
+          <div class="content">
+            <h5>《未来简史》</h5>
+            <!-- 商品名称 -->
+            <p>（以）尤瓦尔.赫拉利</p>
+            <!-- 商品价格 -->
+          </div>
+          <% end %>
+        </div>
+
+        <div class="col-md-3">
+          <%= link_to '#' do %>
+          <!-- 商品连结 -->
+          <div class="box"><%= image_tag("quanli.jpg") %></div>
+          <!-- 商品图片 -->
+          <div class="content">
+            <h5> 《权利》 </h5>
+            <!-- 商品名称 -->
+            <p>（美） 杰弗瑞.菲佛 </p>
+            <!-- 商品价格 -->
+          </div>
+          <% end %>
+        </div>
+
+        <div class="col-md-3">
+          <%= link_to '#' do %>
+          <!-- 商品连结 -->
+          <div class="box"><%= image_tag("TED演讲的力量.jpg") %></div>
+          <!-- 商品图片 -->
+          <div class="content">
+            <h5>《演讲的力量》</h5>
+            <!-- 商品名称 -->
+            <p>（美）克里斯.安德森 </p>
+            <!-- 商品价格 -->
+          </div>
+          <% end %>
+        </div>
+
+        <div class="col-md-3">
+          <%= link_to '#' do %>
+          <!-- 商品连结 -->
+          <div class="box"><%= image_tag("离经叛道.jpg") %></div>
+          <!-- 商品图片 -->
+          <div class="content">
+            <h5>《离经叛道》</h5>
+            <!-- 商品名称 -->
+            <p>（美）亚当.格兰特 </p>
+            <!-- 商品价格 -->
+          </div>
+          <% end %>
+        </div>
+
+        <div class="col-md-3">
+          <%= link_to '#' do %>
+          <!-- 商品连结 -->
+          <div class="box"><%= image_tag("你要如何衡量你的人生.jpg") %></div>
+          <!-- 商品图片 -->
+          <div class="content">
+            <h5>《你要如何衡量你的人生》</h5>
+            <!-- 商品名称 -->
+            <p>（美）克莱顿.克里斯坦森 </p>
+            <!-- 商品价格 -->
+          </div>
+          <% end %>
+        </div>
+
+        <div class="col-md-3">
+          <%= link_to '#' do %>
+          <!-- 商品连结 -->
+          <div class="box"><%= image_tag("硅谷钢铁侠.jpg") %></div>
+          <!-- 商品图片 -->
+          <div class="content">
+            <h5>《硅谷钢铁侠》</h5>
+            <!-- 商品名称 -->
+            <p2>（美）阿什利.万斯</p2>
+            <!-- 商品价格 -->
+          </div>
+          <% end %>
+        </div>
+
+        <div class="col-md-3">
+          <%= link_to '#' do %>
+          <!-- 商品连结 -->
+          <div class="box"><%= image_tag("刻意练习.jpg") %></div>
+          <!-- 商品图片 -->
+          <div class="content">
+            <h5>《刻意练习》</h5>
+            <!-- 商品名称 -->
+            <p>（美）安德斯.艾利克森 </p>
+            <!-- 商品价格 -->
+          </div>
+          <% end %>
+        </div>
+
+        <div class="col-md-3">
+          <%= link_to '#' do %>
+          <!-- 商品连结 -->
+          <div class="box"><%= image_tag("指数型组织.jpg") %></div>
+          <!-- 商品图片 -->
+          <div class="content">
+            <h5>《指数型组织》</h5>
+            <!-- 商品名称 -->
+            <p>（加）伊斯梅尔（美）马隆 </p>
+            <!-- 商品价格 -->
+          </div>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="support-box">
+    <div class="row">
+      <div class="col-md-10  col-md-offset-1">
+        <h2>我们可以给您提供什么</h2>
+        <!---副标题--->
+        <div class="short-line"></div>
+        <!-- 分隔线 -->
+        <div class="col-md-4">
+          <%= link_to '#' do %>
+          <!-- 图片连结 -->
+          <div class="box"><%= image_tag("hui-icon.png") %></div>
+          <!-- 图片 -->
+          <div class="content">
+            <p> “读”版块 </p>
+            <!-- 名称 -->
+            <p>“读”版块供所有注册会员免费体验通过每天分享精华解读、全民荐书、线下活动、
+                书友分享等内容，丰富注册会员的读书体验。
+            </p>
+            <!-- 商品价格 -->
+          </div>
+          <% end %>
+        </div>
+
+        <div class="col-md-4">
+          <%=  link_to '#'  do %>
+          <div class="box">
+            <%=  image_tag("shu-icon.png")  %>
+          </div>
+          <div class="content">
+            <p> “书”版块 </p>
+            <p>“书”版块为会员解读的优质书籍，
+              可以搜索您喜欢的类型的书籍解读。
+            </p>
+          </div>
+          <%  end %>
+        </div>
+
+        <div class="col-md-4">
+          <%=  link_to '#'  do %>
+          <div class="box">
+            <%=  image_tag("du-icon.png")  %>
+          </div>
+          <div class="content">
+            <p> “会”版块 </p>
+            <p> “会”版块为会员享受个人服务和互动的入口，
+                会期续费、签到、笔记漂流等都可以赚取积分。
+            </p>
+          </div>
+          <%  end %>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==== (回到顶部) ====-->
+  <div class="goTop">
+    <span class="fa  fa-chevron-up"></span>
   </div>
+
 </div>

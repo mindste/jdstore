@@ -44,6 +44,7 @@ gem  'will_paginate'   #  分页
 gem  'will_paginate-bootstrap'  # 美化分页效果
 gem  'rucaptcha'       #  验证码gem
 gem  'dalli'           #  加载 Memcached 或 Redis支持 的cache_store方案
+gem  'jquery-turbolinks' 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
